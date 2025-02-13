@@ -5,7 +5,7 @@ import {
   CardContent,
   CardFooter,
   CardHeader,
-  CardTitle,
+  CardTitle
 } from "@/components/ui/card";
 import {
   Select,
@@ -30,7 +30,7 @@ function App() {
 
   const sendEmail = async () => {
     try {
-        await axios.post("http://localhost:4000", 
+        await axios.post("/.netlify/functions/sendEmail", 
         {
             email,
             firstname,
